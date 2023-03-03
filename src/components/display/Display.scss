@@ -1,3 +1,4 @@
+@use "src/index.scss" as *;
 // .portraits {
 //     background-color: grey;
 //     border: .1em solid red;
@@ -13,3 +14,19 @@
 // .pattern-pic{
 //     width: 100%;
 // }
+
+.pattern-browser-container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-inline: auto;
+}
+
+@media (max-width: 450px) {
+    .pattern-browser-container{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin-inline: auto;
+    }
+}

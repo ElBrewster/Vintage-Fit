@@ -1,18 +1,20 @@
+@use "src/index.scss" as *;
+
 .portraits {
     background-color: rgb(83, 83, 83);
-    border: .1em solid grey;
-    border-radius: .1em;
+    border: .2rem solid grey;
+    border-radius: .1rem;
     clip-path: polygon(7% 0, 93% 0, 100% 7%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0 7%);
     color: plum;
     display: flex;
     flex-direction: column;
-    width: 20em;
+    width: 20rem;
 }
 
 .portrait-heading{
     background-color: lightgreen;
     color: darkslategray;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -23,10 +25,10 @@
 .portrait-button{
     background-color: rgb(246, 241, 231);
     border-inline-color: pink;
-    border-inline-width: .2em;
+    border-inline-width: .2rem;
     border-inline-style: auto;
-    border-radius: .1em;
+    border-radius: .1rem;
     color: darkslategray;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     width: 100%;
 }
