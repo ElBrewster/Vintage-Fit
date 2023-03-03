@@ -1,0 +1,15 @@
+.navigator-bar{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    min-height: 8lvh;
+    width: 100lvw;
+}
+
+.browse-nav,
+.profile-nav,
+.your-fit-notes-nav{
+    font-weight: 500;
+    margin: 0;
+    text-decoration: none;
+}

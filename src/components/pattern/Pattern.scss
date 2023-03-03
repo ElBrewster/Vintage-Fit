@@ -1,0 +1,32 @@
+.portraits {
+    background-color: rgb(83, 83, 83);
+    border: .1em solid grey;
+    border-radius: .1em;
+    clip-path: polygon(7% 0, 93% 0, 100% 7%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0 7%);
+    color: plum;
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+}
+
+.portrait-heading{
+    background-color: lightgreen;
+    color: darkslategray;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.pattern-pic{
+    width: 320px;
+}
+
+.portrait-button{
+    background-color: rgb(246, 241, 231);
+    border-inline-color: pink;
+    border-inline-width: .2em;
+    border-inline-style: auto;
+    border-radius: .1em;
+    color: darkslategray;
+    font-size: 1.3em;
+    width: 100%;
+}
