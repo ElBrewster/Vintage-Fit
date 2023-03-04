@@ -14,12 +14,12 @@
     background-color: $darkGray;
     border: none;
     // border: 1px solid $sunflower;
-    color: $sunflower;
+    color: $greenButter;
     font-size: 2rem;
 }
 .flagButton:hover,
 .heartButton:hover{
-    color: $greenButter;
+    color: $sunflower;
 }
 .flagButton:active,
 .heartButton:active{
