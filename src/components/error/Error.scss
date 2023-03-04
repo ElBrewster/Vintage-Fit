@@ -5,15 +5,28 @@
     background-color: $darkGray;
     background-image: url("../../assets/pexels-pixabay.jpg");
     background-size: cover;
+    height: 81dvh;
 }
+
 .error-h2{
     margin-left: 1rem;
     font-size: 2.2rem;
 }
+
 .return-home{
     background-color: $blueGray;
     border-radius: .2rem;
     color: $simplicityGreen;
     font-size: 2rem;
+    height: 4rem;
     margin-left: 1rem;
+}
+
+.return-home:hover{
+    background-color: $retroPink;
+    color: $blueGray;
+}
+
+.return-home:active{
+    background-color: $simpleGray;
 }
