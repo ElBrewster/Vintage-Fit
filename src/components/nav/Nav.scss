@@ -3,6 +3,7 @@
 .navigator-bar{
     align-items: center;
     background-color: $notBlack;
+    border-bottom: .2rem solid $blueGray;
     display: flex;
     flex-direction: row;
     min-height: 8lvh;

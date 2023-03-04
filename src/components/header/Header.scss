@@ -3,6 +3,8 @@
 .my-header{
     background-color: $champaigneBuick;
     border-bottom: .2em solid silver;
+    display: flex;
+    flex-direction: row;
     min-height: 8lvh;
     width: 100lvw;
 }
@@ -10,12 +12,25 @@
 h1 {
     font-size: 4rem;
     margin-bottom: .7rem;
-    margin-left: 1.7rem;
     margin-top: .8rem;
 }
 
+.squirrel{
+    align-self: baseline;
+    height: 4rem;
+    padding-left: 1rem;;
+    padding-top: 1rem;
+    width: 4rem;
+}
 @media (max-width: 450px) {
     h1 {
         font-size: 2.8rem;
+    }
+    .squirrel{
+        align-self: baseline;
+        height: 3rem;
+        padding-left: 1rem;;
+        padding-top: 1rem;
+        width: 3rem;
     }
 }

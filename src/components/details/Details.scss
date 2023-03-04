@@ -1,7 +1,9 @@
 @use "src/index.scss" as *;
 
 .pattern-box{
-    display: grid;
+    color: $grubbyPaper;
+    display: flex;
+    flex-direction: row;
     gap: 1.5rem;
     margin: 1.5rem;
 }

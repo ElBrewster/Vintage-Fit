@@ -1,13 +1,13 @@
 @use "src/index.scss" as *;
 
 .portraits {
-    background-color: $darkGray;
-    border: .2rem solid $simpleGray;
+    background-color: $grubbyPaper;
+    border: .2rem solid silver;
     border-radius: .1rem;
     clip-path: polygon(7% 0, 93% 0, 100% 7%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0 7%);
     display: flex;
     flex-direction: column;
-    // width: 20rem;
+    width: 20rem;
 }
 
 .portrait-heading{
