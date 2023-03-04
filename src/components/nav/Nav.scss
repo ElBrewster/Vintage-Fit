@@ -21,6 +21,9 @@ a,
     text-decoration: none;
 }
 
+a:hover{
+    color: silver;
+}
 @media (max-width: 450px){
     ul,
     .navigator-bar{
