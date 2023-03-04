@@ -1,12 +1,18 @@
-describe("App and its main browser page", () => {
+describe("My App and its Main Browser Page", () => {
   beforeEach(() => {
-    cy.intercept("http://localhost:5500/patterns", { method: "GET", fixture: "../fixtures/fixture.json" })
+    cy.intercept("http://localhost:5500/patterns", { method: "GET", fixture: "../fixtures/fixtures.json" })
     cy.visit("http://localhost:5173/")
   })
-  it('Should show the main page of the app', () => {
+
+  it ("Should show an error when it has the wrong url input", () => {
+    cy.visit("http://localhost:5173/*")
+    cy.get("h2").contains("Sorry! What you're looking for isn't here!")
+  })
+
+  it("Should show the main page of the app", () => {
     cy.get("header").should("have.class", "my-header")
     cy.get("h1").contains("Vintage Fit")
-    cy.get("nav").contains("Browse")
+    cy.get("svg.squirrel").should("be.visible")
   })
 
   it("Should have a nav bar that navigates to different page views using react router", () => {
@@ -25,4 +31,5 @@ describe("App and its main browser page", () => {
     cy.get(".portrait-button").contains("Community Notes").click()
       .url().should("eq", "http://localhost:5173/details/1")
   })
+
 })

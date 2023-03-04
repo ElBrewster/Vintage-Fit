@@ -3,6 +3,9 @@ import "./Error.scss";
 
 export default function Error() {
     return(
-        <h2>Sorry! What you're looking for isn't here!</h2>
+        <div className="error-page">
+            <h2 className="error-h2">Sorry! What you're looking for isn't here!</h2>
+            <button className="return-home">Let's go look at patterns!</button>
+        </div>
     );
 }

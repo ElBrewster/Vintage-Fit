@@ -1,5 +1,36 @@
-describe('template spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
+describe("My Pattern Details Display", () => {
+  beforeEach(() => {
+    const myStub = "../fixtures/fixture.json"
+    cy.intercept("http://localhost:5500/patterns", { method: "GET", fixture: "../fixtures/fixture.json"})
+    cy.visit("http://localhost:5173/details/")
+  })
+
+  it ("Should Show an Error with no pattern number in the url", () => {
+    cy.get("h2").contains("Sorry! What you're looking for isn't here!")
+  })
+
+  it("Should show the same nav bar as in the main display view", () => {
+    cy.get("ul.browse-nav").contains("Browse").click()
+      .url().should("eq", "http://localhost:5173/")
+    cy.get("ul.profile-nav").contains("My Page").click()
+      .url().should("eq", "http://localhost:5173/profile")
+    cy.get("ul.your-fit-notes-nav").contains("Fit Notes").click()
+      .url().should("eq", "http://localhost:5173/your-fit-notes")
+  })
+
+  it ("Should show details for one pattern", () => {
+    cy.visit("http://localhost:5173/details/1")
+
+    // cy.get("img.pattern-pic").should("be.visible").should("have.attr",
+    //   "src",
+    //   "https://lh4.googleusercontent.com/xvOXF_Dxy8uOi9221-juJm67L5XwgbuVcj0U8Qq6n4ItjBBjEnOvH48eJ1T9Mf2abzg=w2400"
+    // ).should("have.alt", "picture of a pattern cover")
+    
+    // cy.stub({
+    //   "id": "1",
+    //   "name": "Butterick Retro 52",
+    //   "url": "https://lh4.googleusercontent.com/xvOXF_Dxy8uOi9221-juJm67L5XwgbuVcj0U8Qq6n4ItjBBjEnOvH48eJ1T9Mf2abzg=w2400",
+    //   "alt": "picture of a pattern cover"
+    //   })
   })
 })

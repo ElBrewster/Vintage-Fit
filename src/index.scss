@@ -16,13 +16,16 @@ $deepOrange: rgb(234, 101, 18);
   box-sizing: border-box;
   color: $notBlack;
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  height: 100lvh;
+  width: 100lvs;
 }
 
 body {
-  margin: 0;
   display: flex;
+  margin: 0;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100%;
   padding: 0;
 }
 
