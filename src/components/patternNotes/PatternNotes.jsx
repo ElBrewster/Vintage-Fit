@@ -10,7 +10,6 @@ export default function PatternNotes() {
                 <p>All user's comments on the pattern use go here. </p>
                 <p>We are cataloguing the accumulated data of all user's fit notes.</p>
             </section>
-            <Counters />
         </div>
     )
 }

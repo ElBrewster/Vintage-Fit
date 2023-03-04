@@ -38,6 +38,11 @@
     color: $notBlack;
 }
 
+.portrait-button:active{
+    background-color: $darkGray;
+    color: $retroPink;
+}
+
 .pattern-pic{
     object-fit: cover;
     height: 480px;
