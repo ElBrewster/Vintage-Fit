@@ -3,6 +3,9 @@ import "./Profile.scss";
 
 export default function Profile() {
     return(
-        <p>I love sewing!</p>
+        <section className="profile-container">
+            <h2 className="profile-h2">I love sewing!</h2>
+
+        </section>
     );
 }

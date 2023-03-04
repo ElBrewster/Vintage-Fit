@@ -1,1 +1,22 @@
 @use "src/index.scss" as *;
+
+.profile-container{
+    background-color: $darkGray;
+    background-image: url("../../assets/pexels-pixabay.jpg");
+    background-size: cover;
+    height: 81dvh;
+}
+
+.profile-h2{
+    margin-left: 1rem;
+    font-size: 2.2rem;
+    margin-left: 2rem;
+}
+
+@media (max-width: 400px) {
+    .profile-container{
+        background-image: url("../../assets/pexels-alex-andrews-cropped.jpg");
+        background-size: cover;
+        height: 80svh;
+    }
+}

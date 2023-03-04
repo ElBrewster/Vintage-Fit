@@ -2,5 +2,15 @@
 
 .fit-notes-view{
     background-image: url("../../assets/pexels-alex-andrews.jpg");
+    background-size: cover;
+    border-bottom: 2px solid $notBlack;
     color: $grubbyPaper;
+    height: 81dvh;
+    // transform: scaleX(-1);
+    
+}
+
+.fit-notes-view-h2 {
+    color: $grubbyPaper;
+    margin-left: 2rem;
 }
