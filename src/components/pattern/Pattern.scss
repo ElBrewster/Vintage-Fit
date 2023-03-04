@@ -27,11 +27,19 @@
     border-radius: .2rem;
     color:$blueGray;
     font-size: 1.3rem;
+    padding: .5rem;
     width: 100%;
+}
+
+.portrait-button:hover{
+    background-color: $retroPink;
+    border-inline-color: $darkGray;
+    color: $notBlack;
 }
 
 .pattern-pic{
     object-fit: cover;
+    height: 480px;
     width: 320px;
 }
 
