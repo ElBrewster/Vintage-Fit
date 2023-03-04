@@ -1,17 +1,36 @@
 @use "src/index.scss" as *;
 
 .navigator-bar{
-    background-color: black;
+    align-items: center;
+    background-color: $notBlack;
     display: flex;
     flex-direction: row;
     min-height: 8lvh;
     width: 100lvw;
 }
 
+a,
 .browse-nav,
 .profile-nav,
-.your-fit-notes-nav{
-    font-weight: 500;
+.your-fit-notes-nav{        
+    color: $grubbyPaper;
+    font-size: 1.3rem;
+    font-weight: 300, 1;
     margin: 0;
     text-decoration: none;
+}
+
+@media (max-width: 450px){
+    ul,
+    .navigator-bar{
+        font-size: 1rem;
+        padding: .5rem;
+    }
+
+    a,
+    .browse-nav,
+    .profile-nav,
+    .your-fit-notes-nav{
+    font-size: 1rem;
+    }
 }

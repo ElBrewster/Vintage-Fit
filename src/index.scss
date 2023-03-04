@@ -1,5 +1,17 @@
+$champaigneBuick: rgb(176, 151, 99);
+$notWhite: rgb(237, 237, 237);
+$grubbyPaper: rgb(246, 241, 231);
+$darkGray: rgb(83, 83, 83);
+$simpleGray: rgb(128, 128, 128);
+$blueGray: rgb(47, 79, 79);
+$retroPink: rgb(223, 152, 164);
+$simplicityGreen: rgb(158, 205, 153);
+$betterGreen:  rgb(144, 238, 144);
+$notBlack: rgb(9, 15, 8);
+
 :root {
   box-sizing: border-box;
+  color: $notBlack;
   font-family: 'Montserrat', sans-serif;
 }
 

@@ -1,7 +1,7 @@
 @use "src/index.scss" as *;
 
 .App {
-  background-color: rgb(237, 237, 237);
+  background-color: $notWhite;
   display: flex;
   flex-direction: column;
 }

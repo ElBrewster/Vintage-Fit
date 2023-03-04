@@ -1,11 +1,21 @@
 @use "src/index.scss" as *;
 
 .my-header{
-    background-color: rgb(176, 151, 99);
+    background-color: $champaigneBuick;
+    border-bottom: .2em solid silver;
     min-height: 8lvh;
     width: 100lvw;
 }
 
 h1 {
-    margin: 0;
+    font-size: 4rem;
+    margin-bottom: .7rem;
+    margin-left: 1.7rem;
+    margin-top: .8rem;
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 2.8rem;
+    }
 }

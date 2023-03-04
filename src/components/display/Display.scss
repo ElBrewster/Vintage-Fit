@@ -1,25 +1,10 @@
 @use "src/index.scss" as *;
-// .portraits {
-//     background-color: grey;
-//     border: .1em solid red;
-//     color: plum;
-//     width: 20em;
-// }
-
-// .portrait-heading{
-//     background-color: lightgreen;
-//     color: darkslategray;
-// }
-
-// .pattern-pic{
-//     width: 100%;
-// }
 
 .pattern-browser-container{
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
-    margin-inline: auto;
+    margin: 1.5rem;
 }
 
 @media (max-width: 450px) {
@@ -27,6 +12,13 @@
         display: grid;
         gap: 1rem;
         grid-template-columns: repeat(1, 1fr);
-        margin-inline: auto;
+    }
+}
+
+@media (min-width: 1300px) {
+    .pattern-browser-container{
+        display: grid;
+        gap: .5rem;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
