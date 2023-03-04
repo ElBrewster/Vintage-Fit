@@ -1,1 +1,6 @@
 @use "src/index.scss" as *;
+
+.fit-notes-view{
+    background-image: url("../../assets/pexels-alex-andrews.jpg");
+    color: $grubbyPaper;
+}
