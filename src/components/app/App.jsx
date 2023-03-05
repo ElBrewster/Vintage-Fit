@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import './App.scss';
 import Nav from "../nav/Nav";
 import Header from '../header/Header';
-import Display from '../display/display';
+import Display from '../display/Display';
 import Details from '../details/Details';
 import Profile from '../profile/Profile';
 import FitNotes from '../fitNotes/FitNotes';
