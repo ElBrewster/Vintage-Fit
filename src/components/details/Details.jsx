@@ -13,7 +13,7 @@ export default function Details(){
 
     const location = useLocation();
     const { from } = location.state;
-
+    console.log("location.state:", location.state)
     const getPatternId = () => {
         setCurrentPatternId(prevState => prevState = from.id);
     }
