@@ -1,5 +1,4 @@
 import React from "react";
-import Counters from "../counters/Counters";
 import "./PatternNotes.scss";
 
 export default function PatternNotes() {

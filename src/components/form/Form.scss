@@ -1,0 +1,13 @@
+@use "src/index.scss" as *;
+
+.profile-form{
+    align-items: flex-start;
+    background-color: $champaigneBuick;
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+    padding: .5rem;
+    width: 80vw;
+}

@@ -8,6 +8,10 @@
     margin: 1.5rem;
 }
 
+.notes-box{
+    display: flex;
+    flex-direction: column;
+}
 @media (max-width: 450px) {
     .pattern-box{
         display: grid;

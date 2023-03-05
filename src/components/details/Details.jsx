@@ -4,6 +4,7 @@ import "./Details.scss";
 import Pattern from "../pattern/Pattern";
 import Counters from "../counters/Counters";
 import PatternNotes from "../patternNotes/PatternNotes";
+import AddNotes from "../addForm/AddNotes";
 
 export default function Details(){
     const [userLiked, setUserLiked] = useState([]);
@@ -45,8 +46,10 @@ export default function Details(){
         <div className="pattern-box">
             <Pattern key={from.id} pattern={from}/>
             <Counters addToLikes={addToLikes} currentPatternId={currentPatternId} />
-            {/* how do I get the form.id param passed with trackLikes? */}
-            <PatternNotes />
+            <div className="notes-box">
+                <PatternNotes />
+                <AddNotes />
+            </div>
         </div>
     );
 }
