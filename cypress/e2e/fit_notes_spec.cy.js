@@ -15,6 +15,8 @@ describe("My Fit Notes Page View", () => {
   it ("Should have some text", () => {
     cy.get("div.fit-notes-view").contains("Leave your Fit Notes here!");
     cy.get("h2").contains("Leave your Fit Notes here!");
-    //test for background image?
+    cy.get(".fit-notes-view") 
+      .should("have.css", "background-image")
+      .and("include", "http://localhost:5173/src/assets/pexels-pixabay.jpg")
   })
 })
