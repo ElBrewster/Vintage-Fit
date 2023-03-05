@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AddNotes.scss";
+import "./AddNotesForm.scss";
 
 export default function AddNotes() {
     const [addNotes, setAddNotes] = useState(

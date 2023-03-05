@@ -1,10 +1,12 @@
 import React from "react";
 import "./PatternNotes.scss";
 
-export default function PatternNotes({checkForComments}) {
+export default function PatternNotes({pattern, checkForComments, addUserComments}) {
 
+    console.log("from :", pattern)
+//^^ keeping this log here for documentation purposes    
     function showComments(){
-        const comments = checkForComments();
+        const comments = checkForComments(pattern.id);
         if(comments){
             comments.map(comment => {
             return <p>{comment.note}</p>

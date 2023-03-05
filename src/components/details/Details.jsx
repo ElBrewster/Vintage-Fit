@@ -4,16 +4,16 @@ import "./Details.scss";
 import Pattern from "../pattern/Pattern";
 import Counters from "../counters/Counters";
 import PatternNotes from "../patternNotes/PatternNotes";
-import AddNotes from "../addForm/AddNotes";
+import AddNotesForm from "../addNotesForm/AddNotesForm";
 
-export default function Details({grabComment}){
+export default function Details({grabComment, addUserComments}){
     const [userLiked, setUserLiked] = useState([]);
     const [userFlagged, setUserFlagged] = useState([]);
     const [currentPatternId, setCurrentPatternId] = useState();
 
     const location = useLocation();
     const { from } = location.state;
-    // console.log("location.state:", location.state)
+    console.log("location.state:", location.state)
     const grabPatternId = () => {
         setCurrentPatternId(prevState => prevState = from.id);
     }
@@ -40,20 +40,17 @@ export default function Details({grabComment}){
     }
     // console.log("userliked: ", userLiked)
 //---
-
-
-    function checkForComments(){
+    function checkForComments(currentPatternId){
         grabComment(currentPatternId);
-
     }
-    
+
     return(
         <div className="pattern-box">
             <Pattern key={from.id} pattern={from}/>
             <Counters addToLikes={addToLikes} currentPatternId={currentPatternId} />
             <div className="notes-box">
-                <PatternNotes checkForComments={checkForComments}/>
-                <AddNotes />
+                <PatternNotes pattern={from} checkForComments={checkForComments} addUserComments={addUserComments}/>
+                <AddNotesForm />
             </div>
         </div>
     );

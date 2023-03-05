@@ -16,7 +16,7 @@ export default function App() {
   const [userComments, setUserComments] = useState(comments);
   console.log("userComments: ", comments[0].note);
 
-  function gatherUserComments(addComment){
+  function addUserComments(addComment){
       setUserComments(prevComments => {
         return [...prevComments, addComment]
       })
@@ -27,6 +27,7 @@ export default function App() {
       if(!checkId){
         return;
       } else {
+        console.log("checkId: ", checkId)
         return checkId;
       }
     //match pattern id to commentData's pattern id
