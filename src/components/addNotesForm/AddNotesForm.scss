@@ -1,0 +1,10 @@
+@use "src/index.scss" as *;
+
+.add-notes-form{
+    background-color: $champaigneBuick;
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: .5rem;
+}

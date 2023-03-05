@@ -26,17 +26,17 @@ export default function Counters({addToLikes, currentPatternId}) {
 
     return (
         <div className="counters-dash">
-            <div className="flag">
-                <button onClick={toggleFlag} className="flagButton" alt="flag icon">
-                    {flagIcon}
-                </button>
-                {flagIconText}
-            </div>
             <div className="heart">
                 <button onClick={toggleHeart} className="heartButton" alt="heart icon">
                     {heartIcon}
                 </button>
                 {heartIconText}
+            </div>
+            <div className="flag">
+                {flagIconText}
+                <button onClick={toggleFlag} className="flagButton" alt="flag icon">
+                    {flagIcon}
+                </button>
             </div>
         </div>
     )

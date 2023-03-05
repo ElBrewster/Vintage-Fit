@@ -18,8 +18,10 @@ describe("My Profile Page", () => {
       .url().should("eq", "http://localhost:5173/your-fit-notes")
   })
 
-  it ("Should have some text", () => {
+  it ("Should have some text and a background image", () => {
     cy.get("h2").contains("I love sewing!")
-    //test for background image?
+    cy.get(".profile-container")
+      .should("have.css", "background-image")
+      .and("include", "http://localhost:5173/src/assets/pexels-pixabay.jpg")
   })
 })
