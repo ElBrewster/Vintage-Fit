@@ -17,9 +17,9 @@ describe("My Profile Page", () => {
     cy.get("ul.your-fit-notes-nav").contains("Fit Notes").click()
       .url().should("eq", "http://localhost:5173/your-fit-notes")
   })
-  
+
   it ("Should have some text", () => {
-    cy.get("p").contains("I love sewing!")
+    cy.get("h2").contains("I love sewing!")
     //test for background image?
   })
 })

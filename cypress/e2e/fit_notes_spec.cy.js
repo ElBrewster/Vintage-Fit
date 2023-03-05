@@ -14,7 +14,7 @@ describe("My Fit Notes Page View", () => {
 
   it ("Should have some text", () => {
     cy.get("div.fit-notes-view").contains("Leave your Fit Notes here!");
-    cy.get("p").contains("Leave your Fit Notes here!");
+    cy.get("h2").contains("Leave your Fit Notes here!");
     //test for background image?
   })
 })
