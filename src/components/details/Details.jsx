@@ -14,22 +14,19 @@ export default function Details({grabComment, addUserComments}){
     const location = useLocation();
     const { from } = location.state;
     console.log("location.state:", location.state)
+//^keeping this console.log for understanding and documentation^
+
     const grabPatternId = () => {
         setCurrentPatternId(prevState => prevState = from.id);
     }
 
-    // console.log("set from.id: ", from.id, "currentPattern: ", currentPatternId)
-//----
     function addToLikes(patternNum){
         grabPatternId();
         setUserLiked(prevState => {
             return [...prevState, patternNum];
         })
     }
-    // console.log("userLiked: ", userLiked)
-    // console.log("from.id: ", from.id)
-    // console.log("currentPatternId: ", currentPatternId)
-    //^^this function will add a like, but how do we remove a like based on the click?
+
     function removeLike(patternNum){
         setUserLiked(prevState => {
             if(prevState.includes(patternNum)){
@@ -38,11 +35,6 @@ export default function Details({grabComment, addUserComments}){
             }
         })
     }
-    // console.log("userliked: ", userLiked)
-//---
-    // function checkForComments(currentPatternId){
-    //     grabComment(currentPatternId);
-    // }
 
     return(
         <div className="pattern-box">
@@ -50,7 +42,7 @@ export default function Details({grabComment, addUserComments}){
             <div className="notes-box">
                 <PatternNotes pattern={from} grabComment={grabComment} />
                 <Counters addToLikes={addToLikes} currentPatternId={currentPatternId} />
-                <AddNotesForm addUserComments={addUserComments}/>
+                <AddNotesForm pattern={from} addUserComments={addUserComments}/>
             </div>
         </div>
     );

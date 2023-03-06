@@ -14,14 +14,13 @@ export default function Counters({addToLikes, currentPatternId}) {
         setHeartClick(prevState => !prevState)
         if(heartClick){
             addToLikes(currentPatternId);
-            console.log(currentPatternId);
         }
     }
 
     // const flagIcon = flagClick ? <MdLabelImportant /> : <MdLabelImportantOutline />
     // const flagIconText = flagClick ? `Helpful.` : `This is immaterial.`;
     const heartIcon = heartClick ? <MdFavorite /> : <MdFavoriteBorder />;
-    const heartIconText = heartClick ? `I want to make this.` : `Probably won't try it.`
+    const heartIconText = heartClick ? `I want to make this.` : ""
 
     return (
         <div className="counters-dash">

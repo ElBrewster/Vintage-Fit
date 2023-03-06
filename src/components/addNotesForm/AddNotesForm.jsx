@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./AddNotesForm.scss";
 
-export default function AddNotes({addUserComments}) {
+export default function AddNotes({pattern, addUserComments}) {
     const [addNotes, setAddNotes] = useState(
         {
             userName: "",
@@ -9,6 +9,7 @@ export default function AddNotes({addUserComments}) {
         }
     );
 
+    console.log("Pattern in AddNotesForm: ", pattern, pattern.id)
     function handleChange(event){
         const { name, value } = event.target
         setAddNotes(prevNotes =>(
@@ -17,16 +18,20 @@ export default function AddNotes({addUserComments}) {
                 [name]: value
             }
             ));
-            // console.log("addNotes: ", addNotes)
+            console.log("addNotes in handleChange: ", addNotes)
         }
         
         function handleSubmit(event){
             event.preventDefault();
+            const newNote = {
+                id: "1",
+                patternId: pattern.id,
+                note: addNotes.comment,
+            };
             //add userId
             //add patternId
             //instead of addNotes, construct a new object to pass in that matches mockData
-            addUserComments(addNotes);
-        console.log("addNotes: ", addNotes)
+            addUserComments(newNote);
     }
 
     return(

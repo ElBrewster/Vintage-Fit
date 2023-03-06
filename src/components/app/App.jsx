@@ -14,7 +14,14 @@ import comments from "../../mockData/userCommentsData";
 export default function App() {
   const [patternData, setPatternData] = useState([]);
   const [userComments, setUserComments] = useState(comments);
-  console.log("userComments: ", comments[0].note);
+  const [user1, setUser1] = useState({
+                                      "id":"1", 
+                                      "name": "Jane Joe", 
+                                      "theirNotes": ["1", "2"],
+                                      "favs": ["1", "3", "6"]
+                                    });
+  const [favsList, setFavsList] = useState([]);
+
 
   function addUserComments(addComment){
       setUserComments(prevComments => {
@@ -27,11 +34,21 @@ export default function App() {
       if(!checkId.length){
         return;
       } else {
-        // console.log("checkId: ", checkId)
         return checkId;
       }
-    //match pattern id to commentData's pattern id
   }
+
+  const grabFavs = () => {
+    const empty = []; 
+    patternData.forEach(pattern => {
+        if(user1.favs.includes(pattern.id)){
+            empty.push(pattern);
+            console.log(favsList);
+        }
+    })
+    console.log("empty", empty)
+    setFavsList(empty) 
+}
 
   useEffect(() => {
     // fetch("http://localhost:5500/patterns")
@@ -48,7 +65,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Display patternData={patternData}/>} exact></Route>
         <Route path="/details/:id" element={<Details grabComment={grabComment} addUserComments={addUserComments}/>}></Route>
-        <Route path="/profile" element={<Profile/>}></Route>
+        <Route path="/profile" element={<Profile grabFavs={grabFavs}/>}></Route>
         <Route path="/your-fit-notes" element={<FitNotes/>}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>

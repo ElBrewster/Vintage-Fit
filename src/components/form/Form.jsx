@@ -13,7 +13,6 @@ export default function Form(){
         }
     );
 
-    // console.log(fitNotes);
     function handleChange(event){
         const {name, value, type, checked} = event.target
         setFitnotes(prevFitNotes => ({
@@ -25,11 +24,10 @@ export default function Form(){
 
     function handleSubmit(event){
         event.preventDefault();
-        console.log(fitNotes);
     }
 
     return(
-        <form onSubmit={handleSubmit} className="profile-form">
+        <form onSubmit={(event)=>handleSubmit(event)} className="profile-form">
             <input 
                 type="text"
                 placeholder="Your Nickname"
