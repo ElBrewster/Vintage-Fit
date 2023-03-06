@@ -8,6 +8,13 @@
     margin: 1.5rem;
 }
 
+.pattern-box{
+    background-image: url("../../assets/pexels-alex-andrews.jpg");
+    background-size: cover;
+    border-bottom: 2px solid $notBlack;
+    color: $grubbyPaper;
+    height: 81dvh;
+}
 .notes-box{
     display: flex;
     flex-direction: column;

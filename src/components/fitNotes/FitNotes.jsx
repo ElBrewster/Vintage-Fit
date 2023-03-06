@@ -4,7 +4,7 @@ import "./FitNotes.scss";
 export default function FitNotes() {
     return(
         <div className="fit-notes-view">
-            <h2 className="fit-notes-view-h2">Leave your Fit Notes here!</h2>
+            <h2 className="fit-notes-view-h2">Here are the fit notes youve shared with the community.</h2>
 
         </div>
     );
