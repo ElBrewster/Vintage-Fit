@@ -15,8 +15,8 @@ Many reproductions of older vintage patterns are innaccurate and cause a lot of 
 [view patterns server](https://api-patterns-for-ash.vercel.app/patterns)
 
 ### Screenshots
-[title](link) -link to that gif website
-![alt text](image.jpg) -picture from inside assets folder
+<!-- [title](link) -link to that gif website -->
+![screenshot]("src/assets/screenshot1.png") 
 *italics describing my screenshot: see how this is on mobile! or see how responsive my layout is!*
 *it would be nice to have small gifs of user flows?*
 
