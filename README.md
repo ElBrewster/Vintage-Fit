@@ -1,4 +1,4 @@
-# **Title** ✂️
+# **Classic Fit** ✂️
 
 ## **Overview**
 
