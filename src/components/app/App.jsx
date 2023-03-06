@@ -28,7 +28,7 @@ export default function App() {
         return [...userComments, addComment];
       })
   }
-// console.log("usercomment", userComments)
+
   function grabComment(patternDataId) {
       const checkId = userComments.filter(comment => comment.patternId === patternDataId);
       if(!checkId.length){
@@ -46,7 +46,6 @@ export default function App() {
             console.log(favsList);
         }
     })
-    // console.log("empty", empty)
     setFavsList(empty) 
 }
 
@@ -58,6 +57,7 @@ export default function App() {
     .then(data => setPatternData(data.patterns))
   }, []);
 //I've kept these fetch calls in the same place for Express server deployment clarity, and in case the server is being run locally
+
   return (
     <div className="App">
       <Nav />

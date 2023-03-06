@@ -47,3 +47,10 @@ export default function Details({grabComment, addUserComments, userComments, set
         </div>
     );
 }
+
+Details.propTypes = {
+    grabComment: PropTypes.func,
+    addUserComments: PropTypes.func,
+    userComments: PropTypes.func,
+    setUserComments: PropTypes.func
+}

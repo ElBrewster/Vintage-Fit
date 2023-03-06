@@ -74,3 +74,10 @@ export default function PatternNotes({pattern, grabComment, userComments, setUse
         </div>
     );
 }
+
+PatternNotes.propType = {
+    pattern: PropTypes.object,
+    grabComment: PropTypes.func,
+    userComments: PropTypes.func,
+    setUserComments: PropTypes.func
+}
