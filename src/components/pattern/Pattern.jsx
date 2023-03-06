@@ -14,3 +14,7 @@ export default function Pattern({pattern}) {
         </section>
     );
 }
+
+Pattern.propType = {
+    pattern: PropTypes.object
+}

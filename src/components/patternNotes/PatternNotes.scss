@@ -9,3 +9,32 @@
     border-radius: .3rem;
     padding: .8rem;
 }
+
+.thumbsUp{
+    background-color: black;
+    border: none;
+    color: $greenButter;
+    
+}
+
+.thumbsUp:hover{
+    color: red;
+}
+
+.thumbsDown{
+    background-color: black;
+    border: none;
+    color: $greenButter; 
+}
+
+.thumbsDown:hover{
+    color: red;
+}
+
+thumbsUp:active{
+    color:green;
+}
+
+.thumbsDown:active{
+    color:green;
+}

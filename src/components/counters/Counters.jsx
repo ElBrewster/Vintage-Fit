@@ -39,3 +39,8 @@ export default function Counters({addToLikes, currentPatternId}) {
         </div>
     )
 }
+
+Counters.propTypes = {
+    addToLikes: PropTypes.func,
+    currentPatternId: PropTypes.func
+}

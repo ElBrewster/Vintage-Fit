@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Proptypes from "prop-types";
 import "./Display.scss";
 import Pattern from "../pattern/Pattern";
 // import patterns from "../../mockData/data"
@@ -19,3 +20,7 @@ export default function Display({patternData}) {
         </section>
     );
 }
+
+Display.proptypes = {
+    patternData: Proptypes.array
+};
