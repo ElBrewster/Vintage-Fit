@@ -11,8 +11,8 @@ Many reproductions of older vintage patterns are innaccurate and cause a lot of 
 ## View App 
 
 ### Deployed App
-[visit the app here](https://classic-aepv7dq7h-elbrewster.vercel.app/)
-[view patterns server](https://api-patterns-for-ash.vercel.app/patterns)
+- [visit the app here](https://classic-aepv7dq7h-elbrewster.vercel.app/)
+- [view patterns server](https://api-patterns-for-ash.vercel.app/patterns)
 
 ### Screenshots
 <!-- [title](link) -link to that gif website -->
