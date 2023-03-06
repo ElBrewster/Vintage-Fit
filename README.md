@@ -1,10 +1,10 @@
-# **Title** ✂️ :scissors: [^1]
+# **Title** ✂️ :scissors: 
 
 ## **Overview**
 
 >Many reproductions of older vintage patterns are innaccurate and cause a lot of frustration to those attempting to make a classic fit work. Currently folks get on instagram or reddit and hope they can find notes from others who have successfully attempted to use the new versions so they can save themselves some heartache in the process.  This app attempts to centralize this data bu providing a format where users can post their experience with these patterns so it can be shared and implemented by others who want to make the same item. 
+[^1]User Story
 [^2]User Story
-[^3]User Story
 
 - Two websites I used for my user demographics: [one](https://www.moodfabrics.com/), [two](https://simplicity.com/)
 
@@ -57,14 +57,17 @@
   <img src="https://img.shields.io/badge/-npm-c12127?logo=npm&logoColor=white&style=for-the-badge" width="80"  height="30"/>
 
 </div>
+
 ### Wishlist
 - Add a schema for users and ability to POST user inputs to that API.
 - Add a schema for pattern notes and functionality for users to POST notes to a third API.
 - Stand up Postgres database for ORM tables and seed database with my three APIs.
 *^^ probable expansion on the app*
-[^1]: This app was made by El Brewster! You can find me at:
+
+This app was made by El Brewster! You can find me at:
     * [GitHub](https://github.com/ElBrewster)
     * [LinkedIn](https://www.linkedin.com/in/el-brewster-9817b0255/)
-[^2]: - User Story 1: Jessica Springstein is 47 and lives in Minesota. She is a bank teller. She spends 8 hours a week using this app and has medium-low comfort with mobile technology. She is introverted and her important relationships are with her three cats. She collects cowprint stuff, prefers having a routine. She is tired of the new pattern reproductions having inaccurate seam allowance instructions. She wants to talk to people about her interest in sewing and making these patterns but doesn't want to get caught up in socialization. she just wants to know what people think about the patterns. She is likely to use desktop and tablet views with large font and high contrast.
-[^3]: - User Story 2: Ash K is 23 and is a student living in Santa Barbara. She might spend 4 hours on the weekend to sew and has high comfortability with technology. She is not introverted nor extroverted but split in the middle. She has many important relationships with other people in her sorroity and loves microbiology. She prefers exploration slightly more than having a strict routine. She wants to do something other than science sometimes and thinks sewing will bring out her creativity and keep her down-to-earth. She wants a big screen up while she uses her small $100 home depo sewing machine on the floor of her dorm room. She is frustrated that "patterns are liars". She feels nervous because she is new to sewing and she doesn't want to commit to a pattern if it's going to be a failure at the get-go. She is likely to use desktop and tablet with large font size and high contrast while she is at her sewing machine. 
+
+[^1]: - User Story 1: Jessica Springstein is 47 and lives in Minesota. She is a bank teller. She spends 8 hours a week using this app and has medium-low comfort with mobile technology. She is introverted and her important relationships are with her three cats. She collects cowprint stuff, prefers having a routine. She is tired of the new pattern reproductions having inaccurate seam allowance instructions. She wants to talk to people about her interest in sewing and making these patterns but doesn't want to get caught up in socialization. she just wants to know what people think about the patterns. She is likely to use desktop and tablet views with large font and high contrast.
+[^2]: - User Story 2: Ash K is 23 and is a student living in Santa Barbara. She might spend 4 hours on the weekend to sew and has high comfortability with technology. She is not introverted nor extroverted but split in the middle. She has many important relationships with other people in her sorroity and loves microbiology. She prefers exploration slightly more than having a strict routine. She wants to do something other than science sometimes and thinks sewing will bring out her creativity and keep her down-to-earth. She wants a big screen up while she uses her small $100 home depo sewing machine on the floor of her dorm room. She is frustrated that "patterns are liars". She feels nervous because she is new to sewing and she doesn't want to commit to a pattern if it's going to be a failure at the get-go. She is likely to use desktop and tablet with large font size and high contrast while she is at her sewing machine. 
     
