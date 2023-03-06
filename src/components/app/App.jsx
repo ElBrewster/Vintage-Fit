@@ -28,7 +28,7 @@ export default function App() {
         return [...userComments, addComment];
       })
   }
-
+// console.log("usercomment", userComments)
   function grabComment(patternDataId) {
       const checkId = userComments.filter(comment => comment.patternId === patternDataId);
       if(!checkId.length){
@@ -46,7 +46,7 @@ export default function App() {
             console.log(favsList);
         }
     })
-    console.log("empty", empty)
+    // console.log("empty", empty)
     setFavsList(empty) 
 }
 
@@ -64,7 +64,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Display patternData={patternData}/>} exact></Route>
-        <Route path="/details/:id" element={<Details grabComment={grabComment} addUserComments={addUserComments}/>}></Route>
+        <Route path="/details/:id" element={<Details grabComment={grabComment} addUserComments={addUserComments} userComments={userComments} setUserComments={setUserComments}/>}></Route>
         <Route path="/profile" element={<Profile grabFavs={grabFavs}/>}></Route>
         <Route path="/your-fit-notes" element={<FitNotes/>}></Route>
         <Route path="*" element={<Error />}></Route>

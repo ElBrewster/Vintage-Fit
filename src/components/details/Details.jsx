@@ -6,7 +6,7 @@ import Counters from "../counters/Counters";
 import PatternNotes from "../patternNotes/PatternNotes";
 import AddNotesForm from "../addNotesForm/AddNotesForm";
 
-export default function Details({grabComment, addUserComments}){
+export default function Details({grabComment, addUserComments, userComments, setUserComments}){
     const [userLiked, setUserLiked] = useState([]);
     const [userFlagged, setUserFlagged] = useState([]);
     const [currentPatternId, setCurrentPatternId] = useState();
@@ -40,7 +40,7 @@ export default function Details({grabComment, addUserComments}){
         <div className="pattern-box">
             <Pattern key={from.id} pattern={from}/>
             <div className="notes-box">
-                <PatternNotes pattern={from} grabComment={grabComment} />
+                <PatternNotes pattern={from} grabComment={grabComment} userComments={userComments} setUserComments={setUserComments}/>
                 <Counters addToLikes={addToLikes} currentPatternId={currentPatternId} />
                 <AddNotesForm pattern={from} addUserComments={addUserComments}/>
             </div>

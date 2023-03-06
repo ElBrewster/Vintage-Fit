@@ -24,13 +24,12 @@ export default function AddNotes({pattern, addUserComments}) {
         function handleSubmit(event){
             event.preventDefault();
             const newNote = {
-                id: "1",
+                id: Date.now(),
                 patternId: pattern.id,
+                thumbs: false,
                 note: addNotes.comment,
             };
-            //add userId
-            //add patternId
-            //instead of addNotes, construct a new object to pass in that matches mockData
+
             addUserComments(newNote);
     }
 

@@ -24,7 +24,7 @@ export default function Profile({grabFavs}) {
     //     return favsList.map(fav => <Pattern key={fav.id} pattern={fav}/>);
     // }
     // const favs = showFavs();
-    const renderFavs = showFavs();
+    // const renderFavs = showFavs();
     return(
         <section className="profile-container">
             <h2 className="profile-h2">I love sewing!</h2>
