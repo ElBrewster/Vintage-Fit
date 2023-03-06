@@ -64,7 +64,7 @@ export default function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Display patternData={patternData}/>} exact></Route>
-        <Route path="/details/:id" element={<Details grabComment={grabComment} addUserComments={addUserComments} userComments={userComments} setUserComments={setUserComments}/>}></Route>
+        <Route path="/details/:id" element={<Details grabComment={grabComment} addUserComments={addUserComments} userComments={userComments} setUserComments={setUserComments} setUser1={setUser1}/>}></Route>
         <Route path="/profile" element={<Profile grabFavs={grabFavs}/>}></Route>
         <Route path="/your-fit-notes" element={<FitNotes userComments={userComments}/>}></Route>
         <Route path="*" element={<Error />}></Route>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types'
 import "./Counters.scss";
 import { MdLabelImportant, MdLabelImportantOutline, MdFavoriteBorder, MdFavorite} from "react-icons/md";
 

@@ -28,4 +28,16 @@ describe("My Pattern Details Display", () => {
       cy.visit("http://localhost:5173/details/")
       cy.get("h2").contains("Sorry! What you're looking for isn't here!")
   })
+
+  it("Should show comments and allow user to fav comments", () => {
+    cy.get("#root > div > div > div > div.right-info > section > div")
+    cy.get("button.thumbsDown").should("be.visible").click()
+  })
+
+  it("Should have a form to submit comments", () => {
+    cy.get("form.add-notes-form").should("be.visible")
+    cy.get("input").first().type("new")
+    cy.get("input").first().type("comment")
+    cy.get("button").click()
+  })
 })

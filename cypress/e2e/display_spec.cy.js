@@ -1,6 +1,6 @@
 describe("My App and its Main Browser Page", () => {
   beforeEach(() => {
-    cy.intercept("http://localhost:5500/patterns", { method: "GET", fixture: "../fixtures/fixtures.json" })
+    cy.intercept("https://api-patterns-for-ash.vercel.app/patterns", { method: "GET", fixture: "../fixtures/fixtures.json" })
     cy.visit("http://localhost:5173/")
   })
 
