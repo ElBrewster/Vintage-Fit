@@ -38,7 +38,7 @@ Many reproductions of older vintage patterns are innaccurate and cause a lot of 
 
 ### Installation Instructions For Back-End
 1. Go to [this](https://github.com/ElBrewster/api-patterns-for-ash) repo and repeat setup 2-10 in front-end installation instructions.
-2. In Terminal, type `npm run server.js`.
+2. In Terminal, type `node run server.js`.
 3. Go to [here](http://localhost:5500/patterns) to view server data.
 
 ## Learning Goals
