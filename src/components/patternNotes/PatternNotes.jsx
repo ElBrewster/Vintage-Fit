@@ -15,12 +15,13 @@ export default function PatternNotes({pattern, grabComment}) {
     return(
         <div className="right-info">
             <section>
-                <h2>This is static for now ;-;&nbsp;</h2>
+                <h2>Pattern Notes From Our Sewers&nbsp;</h2>
                 <div className="show-me-comments">
                     {showComments()}
                 </div>
                 <p>All user's comments on the pattern use go here. </p>
-                <p>We are cataloguing the accumulated data of all user's fit notes.</p>
+                <p><span className="span-notes">We are cataloguing the accumulated data of all user's fit notes.
+                    </span></p>
             </section>
         </div>
     )

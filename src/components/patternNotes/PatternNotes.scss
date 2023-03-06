@@ -1,1 +1,11 @@
 @use "src/index.scss" as *;
+
+.span-notes{
+    font-style: italic;
+}
+
+.right-info{
+    background-color: rgb(0, 0, 0, .7);
+    border-radius: .3rem;
+    padding: .5rem;
+}

@@ -47,9 +47,9 @@ export default function Details({grabComment, addUserComments}){
     return(
         <div className="pattern-box">
             <Pattern key={from.id} pattern={from}/>
-            <Counters addToLikes={addToLikes} currentPatternId={currentPatternId} />
             <div className="notes-box">
                 <PatternNotes pattern={from} grabComment={grabComment} />
+                <Counters addToLikes={addToLikes} currentPatternId={currentPatternId} />
                 <AddNotesForm addUserComments={addUserComments}/>
             </div>
         </div>
