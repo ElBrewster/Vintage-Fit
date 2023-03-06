@@ -1,31 +1,42 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./PatternNotes.scss";
 import { BsDot } from 'react-icons/bs';
 import { RiThumbUpLine, RiThumbUpFill } from "react-icons/ri";
 
 export default function PatternNotes({pattern, grabComment, userComments, setUserComments}) {
+    // const [patternComments, setPatternComments] = useState(grabComment(pattern.id));
+    console.log("USERCOMMENTS: ", userComments)
     const [thumbsUp, setThumbsUp] = useState(false);
-console.log("userComments", userComments)
-    // console.log("{ from } in PatternNotes :", pattern)
+// console.log("{ from } in PatternNotes :", pattern)
 //^^ keeping this log here for documentation purposes    
     
     function toggleThumbsUp(pattern, id){
-        const comments = grabComment(pattern.id);
-        // console.log("comments", comments)
         const foundComment = userComments.find(comment => comment.id === id);
-        // console.log("foundComment", foundComment)
-        foundComment.thumbs = !foundComment.thumbs
-        setThumbsUp(foundComment.thumbs)
+        // console.log('Before: ', foundComment.thumbs);
+        // foundComment.thumbs = !foundComment.thumbs
+        // console.log('after', foundComment.thumbs)
+        console.log("patterncomments", userComments)
+
+        // setThumbsUp(foundComment.thumbs);
+        const update = userComments.map(comment => {
+            if(comment.id === foundComment.id) {
+                console.log("comment: ", comment)
+                return { 
+                    ...comment,
+                    thumbs: !comment.thumbs
+                }
+            }
+            return comment;
+        })
+
+        setUserComments(update)
     }
+
+    // const filteredComments = userComments.filter(comment )
 
     function showComments(){
         const comments = grabComment(pattern.id);
-        console.log('comments', comments)
-        // if(comments.thumbs){
-            //split first
-
-
-            const mappedComments = comments.map(comment => {
+            const mappedComments = userComments.map(comment => {
                     if(comment.thumbs){
                         return (
                             <article key={comment.id}>
@@ -47,10 +58,9 @@ console.log("userComments", userComments)
                         );
                     }
                 })
-                console.log("mappedComments", mappedComments)
-                return mappedComments;
-            // }
-        }
+            return mappedComments;
+    }
+
     return(
         <div className="right-info">
             <section>
