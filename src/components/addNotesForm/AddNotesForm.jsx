@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./AddNotesForm.scss";
 
-export default function AddNotes({pattern, addUserComments}) {
+export default function AddNotes({pattern, addUserComments, setUser1}) {
     const [addNotes, setAddNotes] = useState(
         {
             userName: "",
@@ -24,6 +24,7 @@ export default function AddNotes({pattern, addUserComments}) {
         function handleSubmit(event){
             event.preventDefault();
             const newNote = {
+
                 id: Date.now(),
                 patternId: pattern.id,
                 thumbs: false,
@@ -31,6 +32,10 @@ export default function AddNotes({pattern, addUserComments}) {
             };
 
             addUserComments(newNote);
+            setUser1(prevState => ({
+                ...prevState.theirNotes, newNote
+            }))
+            console.log("newNote,", newNote)
     }
 
     return(

@@ -1,4 +1,4 @@
-# **Title** ✂️
+# **Classic Fit** ✂️
 
 ## **Overview**
 
@@ -11,16 +11,22 @@ Many reproductions of older vintage patterns are innaccurate and cause a lot of 
 ## View App 
 
 ### Deployed App
-[visit the app here](https://classic-aepv7dq7h-elbrewster.vercel.app/)
-[view patterns server](https://api-patterns-for-ash.vercel.app/patterns)
+- [visit the app here](https://classic-fit-v7yf-20jku8u8f-elbrewster.vercel.app/)
+- [view patterns server](https://api-patterns-for-ash.vercel.app/patterns)
 
 ### Screenshots
-[title](link) -link to that gif website
-![alt text](image.jpg) -picture from inside assets folder
+<!-- [title](link) -link to that gif website -->
+<!-- ![screenshot]("src/assets/screenshot1.png")  -->
+<img width="1899" alt="Screen Shot 2023-03-05 at 7 35 51 PM" src="https://user-images.githubusercontent.com/113723085/223160812-d2232209-e095-4a51-bea6-1ae43414eed2.png">
+
+<img width="959" alt="Screen Shot 2023-03-05 at 8 21 55 PM" src="https://user-images.githubusercontent.com/113723085/223160781-c93fa138-a45b-449c-9001-c32c4e7928fa.png">
+
+<img width="369" alt="Screen Shot 2023-03-05 at 8 14 52 PM" src="https://user-images.githubusercontent.com/113723085/223160764-b11e311a-79b2-4ce4-8bd2-1b01189bb96f.png">
+
+
 *italics describing my screenshot: see how this is on mobile! or see how responsive my layout is!*
 *it would be nice to have small gifs of user flows?*
 
-[wireframe](link)
 ---
 ## Setup
 ### Installation Instructions For Front-End
