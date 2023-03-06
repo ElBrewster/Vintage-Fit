@@ -17,6 +17,7 @@ Many reproductions of older vintage patterns are innaccurate and cause a lot of 
 ### Screenshots
 <!-- [title](link) -link to that gif website -->
 ![screenshot]("src/assets/screenshot1.png") 
+<img src="src/assets/screenshot1.png" width="300" height="600/>
 *italics describing my screenshot: see how this is on mobile! or see how responsive my layout is!*
 *it would be nice to have small gifs of user flows?*
 
