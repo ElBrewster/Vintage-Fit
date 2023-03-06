@@ -32,11 +32,11 @@ export default function PatternNotes({pattern, grabComment, userComments, setUse
         setUserComments(update)
     }
 
-    // const filteredComments = userComments.filter(comment )
+    const filteredComments = userComments.filter(comment => comment.patternId === pattern.id)
 
     function showComments(){
         const comments = grabComment(pattern.id);
-            const mappedComments = userComments.map(comment => {
+            const mappedComments = filteredComments.map(comment => {
                     if(comment.thumbs){
                         return (
                             <article key={comment.id}>
