@@ -34,8 +34,8 @@ export default function App() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:5500/patterns")
-    // fetch("https://api-patterns-for-ash.vercel.app/patterns")
+    // fetch("http://localhost:5500/patterns")
+    fetch("https://api-patterns-for-ash.vercel.app/patterns")
     .then(res => res.json())
     // .then(res => console.log(res));
     .then(data => setPatternData(data.patterns))
