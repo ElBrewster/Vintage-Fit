@@ -46,7 +46,6 @@ export default function App() {
             console.log(favsList);
         }
     })
-    console.log("empty", empty)
     setFavsList(empty) 
 }
 
@@ -58,13 +57,14 @@ export default function App() {
     .then(data => setPatternData(data.patterns))
   }, []);
 //I've kept these fetch calls in the same place for Express server deployment clarity, and in case the server is being run locally
+
   return (
     <div className="App">
       <Nav />
       <Header />
       <Routes>
         <Route path="/" element={<Display patternData={patternData}/>} exact></Route>
-        <Route path="/details/:id" element={<Details setUser1={setUser1} grabComment={grabComment} addUserComments={addUserComments}/>}></Route>
+        <Route path="/details/:id" element={<Details grabComment={grabComment} addUserComments={addUserComments} userComments={userComments} setUserComments={setUserComments}/>}></Route>
         <Route path="/profile" element={<Profile grabFavs={grabFavs}/>}></Route>
         <Route path="/your-fit-notes" element={<FitNotes userComments={userComments}/>}></Route>
         <Route path="*" element={<Error />}></Route>
