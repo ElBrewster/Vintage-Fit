@@ -27,7 +27,6 @@ Many reproductions of older vintage patterns are innaccurate and cause a lot of 
 *italics describing my screenshot: see how this is on mobile! or see how responsive my layout is!*
 *it would be nice to have small gifs of user flows?*
 
-[wireframe](link)
 ---
 ## Setup
 ### Installation Instructions For Front-End
