@@ -15,7 +15,6 @@ export default function Counters({addToLikes, currentPatternId}) {
         if(heartClick){
             addToLikes(currentPatternId);
             console.log(currentPatternId);
-            
         }
     }
 

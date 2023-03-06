@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./AddNotesForm.scss";
 
-export default function AddNotes() {
+export default function AddNotes({addUserComments}) {
     const [addNotes, setAddNotes] = useState(
         {
             userName: "",
@@ -16,16 +16,21 @@ export default function AddNotes() {
                 ...prevNotes,
                 [name]: value
             }
-        ));
+            ));
+            // console.log("addNotes: ", addNotes)
+        }
+        
+        function handleSubmit(event){
+            event.preventDefault();
+            //add userId
+            //add patternId
+            //instead of addNotes, construct a new object to pass in that matches mockData
+            addUserComments(addNotes);
         console.log("addNotes: ", addNotes)
     }
 
-    function handleSubmit(event){
-        event.preventDefault();
-        console.log("addNotes: ", addNotes)
-    }
     return(
-        <form onSubmit={handleSubmit} className="add-notes-form">
+        <form onSubmit={(event) => handleSubmit(event)} className="add-notes-form">
             <input 
                 type="text"
                 placeholder="Your Nickname"

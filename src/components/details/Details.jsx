@@ -40,17 +40,17 @@ export default function Details({grabComment, addUserComments}){
     }
     // console.log("userliked: ", userLiked)
 //---
-    function checkForComments(currentPatternId){
-        grabComment(currentPatternId);
-    }
+    // function checkForComments(currentPatternId){
+    //     grabComment(currentPatternId);
+    // }
 
     return(
         <div className="pattern-box">
             <Pattern key={from.id} pattern={from}/>
             <Counters addToLikes={addToLikes} currentPatternId={currentPatternId} />
             <div className="notes-box">
-                <PatternNotes pattern={from} checkForComments={checkForComments} addUserComments={addUserComments}/>
-                <AddNotesForm />
+                <PatternNotes pattern={from} grabComment={grabComment} />
+                <AddNotesForm addUserComments={addUserComments}/>
             </div>
         </div>
     );

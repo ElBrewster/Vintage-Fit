@@ -18,16 +18,16 @@ export default function App() {
 
   function addUserComments(addComment){
       setUserComments(prevComments => {
-        return [...prevComments, addComment]
+        return [...userComments, addComment];
       })
   }
 
   function grabComment(patternDataId) {
       const checkId = userComments.filter(comment => comment.patternId === patternDataId);
-      if(!checkId){
+      if(!checkId.length){
         return;
       } else {
-        console.log("checkId: ", checkId)
+        // console.log("checkId: ", checkId)
         return checkId;
       }
     //match pattern id to commentData's pattern id
@@ -40,14 +40,14 @@ export default function App() {
     // .then(res => console.log(res));
     .then(data => setPatternData(data.patterns))
   }, []);
-
+//I've kept these fetch calls in the same place for Express server deployment clarity, and in case the server is being run locally
   return (
     <div className="App">
       <Nav />
       <Header />
       <Routes>
         <Route path="/" element={<Display patternData={patternData}/>} exact></Route>
-        <Route path="/details/:id" element={<Details grabComment={grabComment}/>}></Route>
+        <Route path="/details/:id" element={<Details grabComment={grabComment} addUserComments={addUserComments}/>}></Route>
         <Route path="/profile" element={<Profile/>}></Route>
         <Route path="/your-fit-notes" element={<FitNotes/>}></Route>
         <Route path="*" element={<Error />}></Route>
