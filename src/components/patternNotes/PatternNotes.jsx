@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types"
 import "./PatternNotes.scss";
 import { BsDot } from 'react-icons/bs';
 import { RiThumbUpLine, RiThumbUpFill } from "react-icons/ri";

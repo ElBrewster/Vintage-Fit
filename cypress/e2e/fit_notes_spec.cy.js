@@ -13,10 +13,10 @@ describe("My Fit Notes Page View", () => {
   })
 
   it ("Should have some text", () => {
-    cy.get("div.fit-notes-view").contains("Leave your Fit Notes here!");
-    cy.get("h2").contains("Leave your Fit Notes here!");
+    cy.get("div.fit-notes-view").contains("Here are the fit notes youve shared with the community.");
+    cy.get("h2").contains("Here are the fit notes youve shared with the community.");
     cy.get(".fit-notes-view") 
       .should("have.css", "background-image")
-      .and("include", "http://localhost:5173/src/assets/pexels-pixabay.jpg")
+      .and("include", "http://localhost:5173/src/assets/pexels-alex-andrews.jpg")
   })
 })

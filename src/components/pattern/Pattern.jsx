@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types"
 import { Link } from "react-router-dom";
 import "./Pattern.scss";
 
 export default function Pattern({pattern}) {
-
+console.log('pattern', pattern)
     return(
         <section className="portraits">
             <p className="portrait-heading">{pattern.name}</p>

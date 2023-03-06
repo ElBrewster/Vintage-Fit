@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
+import PropTypes from "prop-types"
 import "./Details.scss";
 import Pattern from "../pattern/Pattern";
 import Counters from "../counters/Counters";
 import PatternNotes from "../patternNotes/PatternNotes";
 import AddNotesForm from "../addNotesForm/AddNotesForm";
 
-export default function Details({grabComment, addUserComments, userComments, setUserComments}){
+export default function Details({grabComment, addUserComments, userComments, setUserComments, setUser1}){
 
     const [userLiked, setUserLiked] = useState([]);
     const [userFlagged, setUserFlagged] = useState([]);
@@ -53,6 +54,7 @@ export default function Details({grabComment, addUserComments, userComments, set
 Details.propTypes = {
     grabComment: PropTypes.func,
     addUserComments: PropTypes.func,
-    userComments: PropTypes.func,
-    setUserComments: PropTypes.func
+    userComments: PropTypes.array,
+    setUserComments: PropTypes.func,
+    setUser1: PropTypes.func
 }
