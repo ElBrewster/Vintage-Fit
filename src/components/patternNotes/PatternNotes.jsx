@@ -1,24 +1,22 @@
 import React from "react";
 import "./PatternNotes.scss";
 
-export default function PatternNotes({pattern, checkForComments, addUserComments}) {
+export default function PatternNotes({pattern, grabComment}) {
 
-    console.log("from :", pattern)
+    console.log("from in PatternNotes :", pattern)
 //^^ keeping this log here for documentation purposes    
     function showComments(){
-        const comments = checkForComments(pattern.id);
+        const comments = grabComment(pattern.id);
         if(comments){
-            comments.map(comment => {
-            return <p>{comment.note}</p>
-            })
+            return comments.map(comment => <p key={comment.id}>{comment.note}</p>)
         }
-        console.log(comments);
+        console.log("comments: ", comments);
     }
     return(
         <div className="right-info">
             <section>
                 <h2>This is static for now ;-;&nbsp;</h2>
-                <div>
+                <div className="show-me-comments">
                     {showComments()}
                 </div>
                 <p>All user's comments on the pattern use go here. </p>
