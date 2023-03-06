@@ -4,24 +4,23 @@ import { MdLabelImportant, MdLabelImportantOutline, MdFavoriteBorder, MdFavorite
 
 export default function Counters({addToLikes, currentPatternId}) {
     const [heartClick, setHeartClick] = useState(false);
-    const [flagClick, setFlagClick] = useState(false);
+    // const [flagClick, setFlagClick] = useState(false);
 
-    function toggleFlag(){
-        setFlagClick(prevState => !prevState)
-    }
+    // function toggleFlag(){
+    //     setFlagClick(prevState => !prevState)
+    // }
 
     function toggleHeart(){
         setHeartClick(prevState => !prevState)
         if(heartClick){
             addToLikes(currentPatternId);
-            console.log(currentPatternId);
         }
     }
 
-    const flagIcon = flagClick ? <MdLabelImportant /> : <MdLabelImportantOutline />
-    const flagIconText = flagClick ? `Helpful.` : `This is immaterial.`;
+    // const flagIcon = flagClick ? <MdLabelImportant /> : <MdLabelImportantOutline />
+    // const flagIconText = flagClick ? `Helpful.` : `This is immaterial.`;
     const heartIcon = heartClick ? <MdFavorite /> : <MdFavoriteBorder />;
-    const heartIconText = heartClick ? `I want to make this.` : `Probably won't try it.`
+    const heartIconText = heartClick ? `I want to make this.` : ""
 
     return (
         <div className="counters-dash">
@@ -31,12 +30,12 @@ export default function Counters({addToLikes, currentPatternId}) {
                 </button>
                 {heartIconText}
             </div>
-            <div className="flag">
+            {/* <div className="flag">
                 {flagIconText}
                 <button onClick={toggleFlag} className="flagButton" alt="flag icon">
                     {flagIcon}
                 </button>
-            </div>
+            </div> */}
         </div>
     )
 }

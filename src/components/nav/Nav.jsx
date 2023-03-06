@@ -8,7 +8,6 @@ export default function Nav(){
             <ul className="browse-nav"><Link to="/">Browse</Link></ul>
             <ul className="profile-nav"><Link to="/profile">My Page</Link></ul>
             <ul className="your-fit-notes-nav"><Link to="/your-fit-notes">Fit Notes</Link></ul>
-            {/* <li>feels like there should be a pattern submit up here</li> */}
         </nav>
     );
 }
