@@ -6,7 +6,7 @@ import Counters from "../counters/Counters";
 import PatternNotes from "../patternNotes/PatternNotes";
 import AddNotesForm from "../addNotesForm/AddNotesForm";
 
-export default function Details({grabComment, addUserComments}){
+export default function Details({grabComment, addUserComments, setUser1}){
     const [userLiked, setUserLiked] = useState([]);
     const [userFlagged, setUserFlagged] = useState([]);
     const [currentPatternId, setCurrentPatternId] = useState();
@@ -25,6 +25,7 @@ export default function Details({grabComment, addUserComments}){
         setUserLiked(prevState => {
             return [...prevState, patternNum];
         })
+        console.log("userliked:", userLiked)
     }
 
     function removeLike(patternNum){
@@ -42,7 +43,7 @@ export default function Details({grabComment, addUserComments}){
             <div className="notes-box">
                 <PatternNotes pattern={from} grabComment={grabComment} />
                 <Counters addToLikes={addToLikes} currentPatternId={currentPatternId} />
-                <AddNotesForm pattern={from} addUserComments={addUserComments}/>
+                <AddNotesForm pattern={from} addUserComments={addUserComments} setUser1={setUser1}/>
             </div>
         </div>
     );
