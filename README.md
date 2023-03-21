@@ -1,4 +1,4 @@
-# **Classic Fit** ✂️
+# **Vintage Fit** ✂️
 
 ## **Overview**
 
