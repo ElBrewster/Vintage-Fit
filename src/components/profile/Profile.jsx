@@ -7,8 +7,10 @@ export default function Profile() {
 
     return(
         <section className="profile-container">
-            <h2 className="profile-h2">I love sewing!</h2>
-            {/* <Form /> */}
+            <div>
+                <h2 className="profile-h2">Create a Community Profile!</h2>
+            </div>
+            <Form />
         </section>
     );
 }

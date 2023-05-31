@@ -5,12 +5,20 @@
     background-size: cover;
     border-bottom: 2px solid $notBlack;
     color: $grubbyPaper;
-    height: 81dvh;
-    // transform: scaleX(-1);
-    
+    height: 81dvh;    
 }
 
 .fit-notes-view-h2 {
     color: $grubbyPaper;
-    margin-left: 2rem;
+}
+
+.noteContainer {
+    margin: 1rem;
+}
+
+.pContainer {
+    background-color: rgb(9, 15, 8, .7);
+    font-weight: 700;
+    padding: 1rem;
+
 }
